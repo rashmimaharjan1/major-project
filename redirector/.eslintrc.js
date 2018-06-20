@@ -4,7 +4,7 @@ module.exports = {
         "commonjs": true,
         "es6": true
     },
-    "extends": "airbnb-base",
+    "extends": "airbnb",
     "parserOptions": {
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
@@ -17,10 +17,13 @@ module.exports = {
         "react"
     ],
     "rules": {
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "indent": [
             2,
             2
         ],
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
         "linebreak-style": [
             "error",
             "unix"
